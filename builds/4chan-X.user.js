@@ -1,11 +1,11 @@
 // ==UserScript==
-// @name         4chan X
-// @version      1.14.22.1
-// @minGMVer     1.14
-// @minFFVer     26
-// @namespace    4chan-X
-// @description  4chan X is a script that adds various features to anonymous imageboards.
-// @license      MIT; https://github.com/ccd0/4chan-x/blob/master/LICENSE 
+// @name         4chan XK
+// @version      1.15.0.0
+// @minGMVer     1.15
+// @minFFVer     27
+// @namespace    4chan-XK
+// @description  4chan XK is a script that adds various features to anonymous imageboards.
+// @license      MIT; https://github.com/ccd0/4chan-x/blob/master/LICENSE
 // @include      http://boards.4chan.org/*
 // @include      https://boards.4chan.org/*
 // @include      http://sys.4chan.org/*
@@ -106,19 +106,19 @@
 // @grant        GM.openInTab
 // @grant        GM.xmlHttpRequest
 // @run-at       document-start
-// @updateURL    https://www.4chan-x.net/builds/4chan-X.meta.js
-// @downloadURL  https://www.4chan-x.net/builds/4chan-X.user.js
+// @updateURL    https://github.com/ErinSteph/4chan-xk/blob/master/builds/4chan-X.user.js?raw=true
+// @downloadURL  https://github.com/ErinSteph/4chan-xk/blob/master/builds/4chan-X.user.js?raw=true
 // @icon         data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAACVBMVEUAAGcAAABmzDNZt9VtAAAAAXRSTlMAQObYZgAAAF5JREFUeNrtkTESABAQxPD/R6tsE2dUGYUtFJvLDKf93KevHJAjpBorAQWSBIKqFASC4G0pCAkm4GfaEvgYXl0T6HBaE97f0vmnfYHbZOMLZCx9ISdKWwjOWZSC8GYm4SUGwfYgqI4AAAAASUVORK5CYII=
 // ==/UserScript==
 
 /*
-* 4chan X
+* 4chan XK
 *
 * Licensed under the MIT license.
 * https://github.com/ccd0/4chan-x/blob/master/LICENSE
 *
 * Appchan X Copyright © 2013-2016 Zixaphir <zixaphirmoxphar@gmail.com>
-* http://zixaphir.github.io/appchan-x/ 
+* http://zixaphir.github.io/appchan-x/
 * 4chan x Copyright © 2009-2011 James Campos <james.r.campos@gmail.com>
 * https://github.com/aeosynth/4chan-x
 * 4chan x Copyright © 2012-2014 Nicolas Stepien <stepien.nicolas@gmail.com>
@@ -128,7 +128,7 @@
 * 4chan x Copyright © 2012-2013 ihavenoface
 * http://ihavenoface.github.io/4chan-x/
 * 4chan SS Copyright © 2011-2013 Ahodesuka
-* https://github.com/ahodesuka/4chan-Style-Script/ 
+* https://github.com/ahodesuka/4chan-Style-Script/
 *
 * Permission is hereby granted, free of charge, to any person
 * obtaining a copy of this software and associated documentation
@@ -151,6 +151,7 @@
 * OTHER DEALINGS IN THE SOFTWARE.
 *
 * Contributors:
+* Erin
 * aeosynth
 * mayhemydg
 * noface
@@ -24736,9 +24737,11 @@ QR = (function() {
       post.lock();
       formData = {
         resto: threadID,
-        name: !QR.forcedAnon ? post.name : void 0,
+        //name: !QR.forcedAnon ? post.name : void 0,
+        name: post.name,
         email: post.email,
-        sub: !(QR.forcedAnon || threadID) ? post.sub : void 0,
+        //sub: !(QR.forcedAnon || threadID) ? post.sub : void 0,
+        sub: post.sub,
         com: post.com,
         upfile: post.file,
         filetag: filetag,
@@ -26600,7 +26603,7 @@ QuoteStrikeThrough = (function() {
 
 }).call(this);
 
-QuoteThreading = 
+QuoteThreading =
 /*
   <3 aeosynth
  */
