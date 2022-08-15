@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         4chan XK
-// @version      1.15.0.0
+// @version      1.15.0.1
 // @minGMVer     1.15
 // @minFFVer     27
 // @namespace    4chan-XK
@@ -211,8 +211,8 @@ docSet = function() {
 };
 
 g = {
-  VERSION:   '1.14.22.1',
-  NAMESPACE: '4chan X.',
+  VERSION:   '1.15.0.1',
+  NAMESPACE: '4chan XK.',
   sites:     Object.create(null),
   boards:    Object.create(null)
 };
@@ -12695,7 +12695,7 @@ Settings = (function() {
       link = $.el('a', {
         className: 'settings-link fa fa-wrench',
         textContent: 'Settings',
-        title: '4chan X Settings',
+        title: '4chan XK Settings',
         href: 'javascript:;'
       });
       $.on(link, 'click', Settings.open);
@@ -12748,7 +12748,7 @@ Settings = (function() {
       $.event('CloseMenu');
       Settings.dialog = dialog = $.el('div', {
         id: 'overlay'
-      }, {innerHTML: "<div id=\"fourchanx-settings\" class=\"dialog\"><nav><div class=\"sections-list\"></div><p class=\"imp-exp-result warning\"></p><div class=\"credits\"><a class=\"export\">Export</a>&nbsp|&nbsp<a class=\"import\">Import</a>&nbsp|&nbsp<a class=\"reset\">Reset Settings</a>&nbsp|&nbsp<input type=\"file\" hidden><a href=\"https://www.4chan-x.net/\" target=\"_blank\">4chan X</a>&nbsp|&nbsp<a href=\"https://github.com/ccd0/4chan-x/blob/master/CHANGELOG.md\" target=\"_blank\">" + E(g.VERSION) + "</a>&nbsp|&nbsp<a href=\"https://gitreports.com/issue/ccd0/4chan-x\" target=\"_blank\">Issues</a>&nbsp|&nbsp<a href=\"javascript:;\" class=\"close fa fa-times\" title=\"Close\"></a></div></nav><div class=\"section-container\"><section></section></div></div>"});
+      }, {innerHTML: "<div id=\"fourchanx-settings\" class=\"dialog\"><nav><div class=\"sections-list\"></div><p class=\"imp-exp-result warning\"></p><div class=\"credits\"><a class=\"export\">Export</a>&nbsp|&nbsp<a class=\"import\">Import</a>&nbsp|&nbsp<a class=\"reset\">Reset Settings</a>&nbsp|&nbsp<input type=\"file\" hidden><a href=\"https://www.4chan-x.net/\" target=\"_blank\">4chan XK</a>&nbsp|&nbsp<a href=\"https://github.com/ccd0/4chan-x/blob/master/CHANGELOG.md\" target=\"_blank\">" + E(g.VERSION) + "</a>&nbsp|&nbsp<a href=\"https://gitreports.com/issue/ccd0/4chan-x\" target=\"_blank\">Issues</a>&nbsp|&nbsp<a href=\"javascript:;\" class=\"close fa fa-times\" title=\"Close\"></a></div></nav><div class=\"section-container\"><section></section></div></div>"});
       $.on($('.export', dialog), 'click', Settings["export"]);
       $.on($('.import', dialog), 'click', Settings["import"]);
       $.on($('.reset', dialog), 'click', Settings.reset);
@@ -18166,13 +18166,13 @@ CatalogLinks = (function() {
               catalogLink = link.parentNode.cloneNode(true);
               link2 = catalogLink.firstElementChild;
               link2.href = catalogURL;
-              link2.textContent = link2.hostname === location.hostname ? '4chan X Catalog' : 'External Catalog';
+              link2.textContent = link2.hostname === location.hostname ? '4chan XK Catalog' : 'External Catalog';
               $.after(link.parentNode, [$.tn(' '), catalogLink]);
             }
           }
         });
       }
-      if (g.SITE.software === 'yotsuba' && Conf['JSON Index'] && Conf['Use 4chan X Catalog']) {
+      if (g.SITE.software === 'yotsuba' && Conf['JSON Index'] && Conf['Use 4chan XK Catalog']) {
         Callbacks.Post.push({
           name: 'Catalog Link Rewrite',
           cb: this.node
@@ -18294,7 +18294,7 @@ CatalogLinks = (function() {
       }
       if (Conf['External Catalog'] && (external = CatalogLinks.external(board))) {
         return external;
-      } else if (Index.enabledOn(board) && Conf['Use 4chan X Catalog']) {
+      } else if (Index.enabledOn(board) && Conf['Use 4chan XK Catalog']) {
         return CatalogLinks.jsonIndex(board, '#catalog');
       } else if ((nativeCatalog = Get.url('catalog', board))) {
         return nativeCatalog;
@@ -27348,7 +27348,7 @@ Main = (function() {
       return $.set(changes, function() {
         var el, ref;
         if ((ref = items['Show Updated Notifications']) != null ? ref : true) {
-          el = $.el('span', {innerHTML: "4chan X has been updated to <a href=\"https://github.com/ccd0/4chan-x/blob/master/CHANGELOG.md\" target=\"_blank\">version " + E(g.VERSION) + "</a>."});
+          el = $.el('span', {innerHTML: "4chan XK has been updated to <a href=\"https://github.com/ccd0/4chan-x/blob/master/CHANGELOG.md\" target=\"_blank\">version " + E(g.VERSION) + "</a>."});
           return new Notice('info', el, 15);
         }
       });
@@ -27921,7 +27921,7 @@ Main = (function() {
       });
       lines = ((ref = data.error.stack) != null ? (ref1 = ref.match(/\d+(?=:\d+\)?$)/mg)) != null ? ref1.join().replace(/^/, ' at ') : void 0 : void 0) || '';
       context = $.el('div', {
-        textContent: "(4chan X ccd0 v" + g.VERSION + " " + $.platform + " on " + $.engine + lines + ")"
+        textContent: "(4chan XK ErinSteph v" + g.VERSION + " " + $.platform + " on " + $.engine + lines + ")"
       });
       return [message, error, context];
     },
@@ -27938,7 +27938,7 @@ Main = (function() {
           return details += text + '\n';
         }
       };
-      addDetails("[Please describe the steps needed to reproduce this error.]\n\nScript: 4chan X ccd0 v" + g.VERSION + " " + $.platform + "\nURL: " + location.href + "\nUser agent: " + navigator.userAgent);
+      addDetails("[Please describe the steps needed to reproduce this error.]\n\nScript: 4chan XK ErinSteph v" + g.VERSION + " " + $.platform + "\nURL: " + location.href + "\nUser agent: " + navigator.userAgent);
       if ($.platform === 'userscript' && (info = typeof GM !== "undefined" && GM !== null ? GM.info : (typeof GM_info !== "undefined" && GM_info !== null ? GM_info : void 0))) {
         addDetails("Userscript manager: " + info.scriptHandler + " " + info.version);
       }
