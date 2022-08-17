@@ -3,8 +3,8 @@
     "4chan-x@4chan-x.net": {
       "updates": [
         {
-          "version": "1.14.22.1",
-          "update_link": "https://www.4chan-x.net/builds/4chan-X.crx"
+          "version": "1.15.0.3",
+          "update_link": "https://github.com/ErinSteph/4chan-xk/tree/master/builds/4chan-XK.crx"
         }
       ]
     }

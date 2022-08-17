@@ -1,20 +1,20 @@
 {
-  "name": "4chan-X",
-  "description": "4chan X is a script that adds various features to anonymous imageboards.",
+  "name": "4chan-XK",
+  "description": "4chan XK is a script that adds various features to anonymous imageboards.",
   "meta": {
-    "name": "4chan X",
-    "path": "4chan-x",
+    "name": "4chan XK",
+    "path": "4chan-xk",
     "fork": "ccd0",
-    "page": "https://www.4chan-x.net/",
-    "downloads": "https://www.4chan-x.net/builds/",
+    "page": "https://github.com/ErinSteph/4chan-xk/",
+    "downloads": "https://github.com/ErinSteph/4chan-xk/tree/master/builds/",
     "oldVersions": "https://raw.githubusercontent.com/ccd0/4chan-x/",
-    "faq": "https://github.com/ccd0/4chan-x/wiki/Frequently-Asked-Questions",
-    "captchaFAQ": "https://github.com/ccd0/4chan-x/wiki/Captcha-FAQ",
-    "cssGuide": "https://github.com/ccd0/4chan-x/wiki/Styling-Guide",
-    "license": "https://github.com/ccd0/4chan-x/blob/master/LICENSE",
-    "changelog": "https://github.com/ccd0/4chan-x/blob/master/CHANGELOG.md",
-    "issues": "https://github.com/ccd0/4chan-x/issues",
-    "newIssue": "https://github.com/ccd0/4chan-x/issues",
+    "faq": "https://github.com/ErinSteph/4chan-xk/wiki/Frequently-Asked-Questions",
+    "captchaFAQ": "https://github.com/ErinSteph/4chan-xk/wiki/Captcha-FAQ",
+    "cssGuide": "https://github.com/ErinSteph/4chan-xk/wiki/Styling-Guide",
+    "license": "https://github.com/ErinSteph/4chan-xk/blob/master/LICENSE",
+    "changelog": "https://github.com/ErinSteph/4chan-xk/blob/master/CHANGELOG.md",
+    "issues": "https://github.com/ErinSteph/4chan-xk/issues",
+    "newIssue": "https://github.com/ErinSteph/4chan-xk/issues",
     "newIssueMaxLength": 8181,
     "alternatives": "https://www.4chan-x.net/4chan_alternatives.html",
     "appid": "lacclbnghgdicfifcamcmcnilckjamag",
@@ -68,8 +68,7 @@
       "https://www.sushigirl.us/*",
       "https://tvch.moe/*"
     ],
-    "matches_extra": [
-    ],
+    "matches_extra": [],
     "exclude_matches": [
       "*://www.4chan.org/advertise",
       "*://www.4chan.org/advertise?*",
@@ -118,6 +117,7 @@
     "url": "https://github.com/ccd0/4chan-x.git"
   },
   "contributors": [
+    "Erin Steph <erin.cx@icloud.com>",
     "James Campos <james.r.campos@gmail.com>",
     "Nicolas Stepien <stepien.nicolas@gmail.com>",
     "ihavenoface <noface@outlook.com>",

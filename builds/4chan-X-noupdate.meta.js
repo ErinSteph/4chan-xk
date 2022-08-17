@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         4chan XK beta
+// @name         4chan XK
 // @version      1.15.0.3
 // @minGMVer     1.14
 // @minFFVer     26
@@ -106,7 +106,7 @@
 // @grant        GM.openInTab
 // @grant        GM.xmlHttpRequest
 // @run-at       document-start
-// @updateURL    https://github.com/ErinSteph/4chan-xk/tree/master/builds/4chan-XK-beta.meta.js
-// @downloadURL  https://github.com/ErinSteph/4chan-xk/tree/master/builds/4chan-XK-beta.user.js
+// @updateURL    https://noupdate.invalid/
+// @downloadURL  https://noupdate.invalid/
 // @icon         data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAACVBMVEUAAGcAAABmzDNZt9VtAAAAAXRSTlMAQObYZgAAAF5JREFUeNrtkTESABAQxPD/R6tsE2dUGYUtFJvLDKf93KevHJAjpBorAQWSBIKqFASC4G0pCAkm4GfaEvgYXl0T6HBaE97f0vmnfYHbZOMLZCx9ISdKWwjOWZSC8GYm4SUGwfYgqI4AAAAASUVORK5CYII=
 // ==/UserScript==

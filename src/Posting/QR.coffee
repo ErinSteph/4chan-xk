@@ -707,9 +707,9 @@ QR =
 
     formData =
       resto:    threadID
-      name:     post.name unless QR.forcedAnon
+      name:     post.name
       email:    post.email
-      sub:      post.sub unless QR.forcedAnon or threadID
+      sub:      post.sub
       com:      post.com
       upfile:   post.file
       filetag:  filetag
