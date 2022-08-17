@@ -1,5 +1,5 @@
-https://github.com/ErinSteph/4chan-xk/blob/master/builds/4chan-XK![screenshot](https://ccd0.github.io/4chan-x/img/screenshot.png)
-# 4chan X
+![screenshot](https://ccd0.github.io/4chan-x/img/screenshot.png)
+# 4chan XK
 4chan XK is a script forked from 4chan X that adds various features to anonymous imageboards, forked for circlerjerks. It was originally developed for 4chan but has no affiliation with it.
 
 It was previously developed by [ccd0](https://github.com/ccd0/4chan-x), [aeosynth](https://github.com/aeosynth/4chan-x), [Mayhem](https://github.com/MayhemYDG/4chan-x), [ihavenoface](https://github.com/ihavenoface/4chan-x), [Zixaphir](https://github.com/zixaphir/appchan-x), [Seaweed](https://github.com/seaweedchan/4chan-x), and [Spittie](https://github.com/Spittie/4chan-x), with contributions from many others.
@@ -26,8 +26,8 @@ Ports of Greasemonkey are available for [SeaMonkey](https://sourceforge.net/proj
 
 **Chrome extension**: 4chan XK is also available as a standalone Chrome extension. The Chrome extension has the additional feature of being able to sync your settings and data with other devices via Chrome Sync. But there is an issue when the script updates: Whenever the Chrome extension is updated, until you hard refresh (F5) the tab, 4chan XK is unable to save any data (such as posts marked as yours and settings changes). The userscript version above does not have this problem when 4chan XK updates, only when Violentmonkey / Tampermonkey is updated. To install as a Chrome extension:
 
-- **Chromium**, **Vivaldi**: **[Download 4chan XK](https://github.com/ErinSteph/4chan-xk/blob/master/builds/4chan-XKK.crx)**, then open `chrome://extensions` and drag the downloaded file onto the page.**.
-- **Opera**: **[Click to install 4chan XK](https://github.com/ErinSteph/4chan-xk/blob/master/builds/4chan-XKK.crx)**, then follow the prompts to activate it in your extension manager.
+- **Chromium**, **Vivaldi**: **[Download 4chan XK](https://github.com/ErinSteph/4chan-xk/blob/master/builds/4chan-XK.crx)**, then open `chrome://extensions` and drag the downloaded file onto the page.**.
+- **Opera**: **[Click to install 4chan XK](https://github.com/ErinSteph/4chan-xk/blob/master/builds/4chan-XK.crx)**, then follow the prompts to activate it in your extension manager.
 - **Chrome**: Install 4chan XK from the **[Chrome store](https://chrome.google.com/webstore/detail/ohnjgmpcibpbafdlkimncjhflgedgpam)**.
 
 Note: This version of 4chan XK does not work with Opera 12. If you need Opera 12 support, try [loadletter's fork](https://github.com/loadletter/4chan-x) instead.
